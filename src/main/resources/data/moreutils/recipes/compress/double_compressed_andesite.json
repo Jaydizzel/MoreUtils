@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreutils:compressed_andesite"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:double_compressed_andesite",
+    "count": 1
+  }
+}

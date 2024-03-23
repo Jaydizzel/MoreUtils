@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:deepslate_tiles"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:compressed_deepslate_tiles",
+    "count": 1
+  }
+}

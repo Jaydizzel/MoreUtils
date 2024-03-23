@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:triple_compressed_obsidian"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:double_compressed_obsidian",
+    "count": 9
+  }
+}

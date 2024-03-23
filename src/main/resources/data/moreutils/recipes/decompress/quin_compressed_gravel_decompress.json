@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:quin_compressed_gravel"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:quad_compressed_gravel",
+    "count": 9
+  }
+}

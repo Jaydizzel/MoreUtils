@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "moreutils:nether_copper_ore"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 288
+  },
+  "temperature": 800,
+  "time": 85
+}

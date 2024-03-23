@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:double_compressed_clay"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:compressed_clay",
+    "count": 9
+  }
+}

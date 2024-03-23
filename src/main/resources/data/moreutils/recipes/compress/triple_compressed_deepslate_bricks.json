@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreutils:double_compressed_deepslate_bricks"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:triple_compressed_deepslate_bricks",
+    "count": 1
+  }
+}

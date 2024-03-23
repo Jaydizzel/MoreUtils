@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:non_compressed_gravel"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:oct_compressed_gravel",
+    "count": 9
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "moreutils:gravel_gold"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_gold",
+    "amount": 288
+  },
+  "temperature": 800,
+  "time": 85
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:bone"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:bone_bundle",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreutils:quad_compressed_gravel"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:quin_compressed_gravel",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreutils:compressed_cobblestone"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:double_compressed_cobblestone",
+    "count": 1
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "moreutils:block/end_gold_ore" }
+  }
+}

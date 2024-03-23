@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:sept_compressed_netherrack"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:sex_compressed_netherrack",
+    "count": 9
+  }
+}

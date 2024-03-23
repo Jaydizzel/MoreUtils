@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:double_compressed_deepslate_bricks"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:compressed_deepslate_bricks",
+    "count": 9
+  }
+}

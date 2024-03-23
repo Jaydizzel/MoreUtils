@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:compressed_emerald_block",
+    "count": 1
+  }
+}

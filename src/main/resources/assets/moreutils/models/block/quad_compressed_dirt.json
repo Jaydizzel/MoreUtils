@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "moreutils:blocks/quad_compressed_dirt"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:compressed_deepslate_tiles"
+    }
+  ],
+  "result":
+  {
+    "item": "minecraft:deepslate_tiles",
+    "count": 9
+  }
+}

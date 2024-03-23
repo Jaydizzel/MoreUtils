@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moreutils:nautilus_ore"
+  },
+  "result": "minecraft:nautilus_shell",
+  "experience": 1.0,
+  "cookingtime": 200
+}

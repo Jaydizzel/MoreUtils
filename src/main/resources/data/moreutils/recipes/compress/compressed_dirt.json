@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:compressed_dirt",
+    "count": 1
+  }
+}

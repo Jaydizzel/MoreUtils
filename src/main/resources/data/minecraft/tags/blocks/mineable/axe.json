@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "moreutils:crate_of_apples",
+    "moreutils:crate_of_kelp"
+
+  ]
+}

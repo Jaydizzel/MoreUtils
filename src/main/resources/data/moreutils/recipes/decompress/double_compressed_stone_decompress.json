@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:double_compressed_stone"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:compressed_stone",
+    "count": 9
+  }
+}

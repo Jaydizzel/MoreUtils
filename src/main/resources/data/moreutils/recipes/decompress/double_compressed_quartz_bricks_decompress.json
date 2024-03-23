@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:double_compressed_quartz_bricks"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:compressed_quartz_bricks",
+    "count": 9
+  }
+}

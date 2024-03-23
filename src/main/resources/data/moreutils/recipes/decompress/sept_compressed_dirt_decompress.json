@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:sept_compressed_dirt"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:sex_compressed_dirt",
+    "count": 9
+  }
+}

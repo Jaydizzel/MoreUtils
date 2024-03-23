@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreutils:non_compressed_sand"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:dec_compressed_sand",
+    "count": 1
+  }
+}

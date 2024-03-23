@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:sex_compressed_sand"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:quin_compressed_sand",
+    "count": 9
+  }
+}

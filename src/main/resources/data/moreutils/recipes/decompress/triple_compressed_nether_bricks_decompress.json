@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:triple_compressed_nether_bricks"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:double_compressed_nether_bricks",
+    "count": 9
+  }
+}

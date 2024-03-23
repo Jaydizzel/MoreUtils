@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreutils:gravel_copper"
+  },
+  "result": "minecraft:raw_copper",
+  "experience": 1.0,
+  "cookingtime": 100
+}

@@ -1,0 +1,21 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "item": "moreutils:nether_iron_ore"
+  },
+  "result": [
+    {
+      "item": "thermal:iron_dust",
+      "chance": 2.0
+    },
+    {
+      "item": "thermal:nickel_dust",
+      "chance": 0.1
+    },
+    {
+      "item": "minecraft:netherrack",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.2
+}

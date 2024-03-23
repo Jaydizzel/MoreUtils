@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreutils:double_compressed_obsidian"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:triple_compressed_obsidian",
+    "count": 1
+  }
+}

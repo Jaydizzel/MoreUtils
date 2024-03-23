@@ -1,0 +1,18 @@
+{
+  "type": "thermal:smelter",
+  "ingredient":
+  {
+    "item": "moreutils:gravel_gold"
+  },
+  "result": [
+    {
+      "item": "minecraft:gold_ingot",
+      "chance": 1.5
+    },
+    {
+      "item": "thermal:rich_slag",
+      "chance": 0.15
+    }
+  ],
+  "experience": 0.5
+}

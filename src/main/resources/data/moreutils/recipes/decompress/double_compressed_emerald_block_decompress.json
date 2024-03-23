@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreutils:double_compressed_emerald_block"
+    }
+  ],
+  "result":
+  {
+    "item": "moreutils:compressed_emerald_block",
+    "count": 9
+  }
+}

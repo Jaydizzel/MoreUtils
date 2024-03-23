@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreutils:oct_compressed_dirt"
+    }
+  },
+  "result":
+  {
+    "item": "moreutils:non_compressed_dirt",
+    "count": 1
+  }
+}

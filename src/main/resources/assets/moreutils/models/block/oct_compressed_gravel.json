@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "moreutils:blocks/oct_compressed_gravel"
+  }
+}

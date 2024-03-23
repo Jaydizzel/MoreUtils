@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "moreutils:block/nether_iron_ore" }
+  }
+}
