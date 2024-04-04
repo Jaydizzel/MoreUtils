@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreutils:blocks/nether_emerald_ore"
+    "all": "moreutils:block/nether_emerald_ore"
   }
 }

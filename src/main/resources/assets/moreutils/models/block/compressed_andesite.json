@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreutils:blocks/compressed_andesite"
+    "all": "moreutils:block/compressed_andesite"
   }
 }

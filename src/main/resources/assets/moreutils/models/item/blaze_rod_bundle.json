@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "moreutils:items/blaze_rod_bundle"
+    "layer0": "moreutils:item/blaze_rod_bundle"
   }
 }

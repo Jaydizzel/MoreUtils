@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreutils:blocks/sept_compressed_sand"
+    "all": "moreutils:block/sept_compressed_sand"
   }
 }

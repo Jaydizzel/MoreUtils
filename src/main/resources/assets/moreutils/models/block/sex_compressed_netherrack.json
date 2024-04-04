@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreutils:blocks/sex_compressed_netherrack"
+    "all": "moreutils:block/sex_compressed_netherrack"
   }
 }

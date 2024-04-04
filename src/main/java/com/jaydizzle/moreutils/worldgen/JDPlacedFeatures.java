@@ -18,19 +18,31 @@ public class JDPlacedFeatures {
     public static final ResourceKey<PlacedFeature> OVERWORLD_ORE_PLACED_KEY = registerKey("overworld_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_ORE_PLACED_KEY = registerKey("nether_ore_placed");
     public static final ResourceKey<PlacedFeature> END_ORE_PLACED_KEY = registerKey("end_ore_placed");
+    public static final ResourceKey<PlacedFeature> OCEAN_ORE_PLACED_KEY = registerKey("ocean_ore_placed");
+    public static final ResourceKey<PlacedFeature> GRAVEL_ORE_PLACED_KEY = registerKey("gravel_ore_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, OVERWORLD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(JDConfiguredFeatures.OVERWORLD_ORE_KEY),
-                JDOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+                JDOrePlacement.commonOrePlacement(12,   //# of veins per chunk
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(200)))); //spawn range
+
         register(context, NETHER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(JDConfiguredFeatures.NETHER_ORE_KEY),
                 JDOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(200))));
+
         register(context, END_ORE_PLACED_KEY, configuredFeatures.getOrThrow(JDConfiguredFeatures.END_ORE_KEY),
                 JDOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(200))));
+
+        register(context, OCEAN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(JDConfiguredFeatures.OCEAN_ORE_KEY),
+                JDOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(200))));
+
+        register(context, GRAVEL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(JDConfiguredFeatures.GRAVEL_ORE_KEY),
+                JDOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(200))));
     }
 
 

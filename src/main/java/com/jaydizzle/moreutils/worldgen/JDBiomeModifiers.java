@@ -16,7 +16,8 @@ public class JDBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_ORE = registerKey("add_overworld_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_ORE = registerKey("add_nether_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_ORE = registerKey("add_end_ore");
-
+    public static final ResourceKey<BiomeModifier> ADD_OCEAN_ORE = registerKey("add_ocean_ore");
+    public static final ResourceKey<BiomeModifier> ADD_GRAVEL_ORE = registerKey("add_gravel_ore");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -35,6 +36,16 @@ public class JDBiomeModifiers {
         context.register(ADD_END_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(JDPlacedFeatures.END_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_OCEAN_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OCEAN),
+                HolderSet.direct(placedFeatures.getOrThrow(JDPlacedFeatures.OCEAN_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GRAVEL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(JDPlacedFeatures.GRAVEL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

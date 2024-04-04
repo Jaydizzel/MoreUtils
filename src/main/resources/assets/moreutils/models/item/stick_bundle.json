@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "moreutils:items/stick_bundle"
+    "layer0": "moreutils:item/stick_bundle"
   }
 }

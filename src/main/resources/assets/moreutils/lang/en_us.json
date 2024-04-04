@@ -321,6 +321,5 @@
   "item.moreutils.blaze_rod_bundle": "Blaze Rod Bundle",
   "item.moreutils.bone_bundle": "Bone Bundle",
 
-  "itemGroup.compressedModTab": "\u00a7eMoreUtils Compressed",
-  "itemGroup.oreModTab": "\u00a7eMoreUtils Ores"
+  "creativetab.moreutils_tab": "\u00a7e\u00a7lMoreUtils"
 }

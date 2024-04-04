@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = MoreUtils.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DataGenerators {
+public class DataGenerators {   //./gradlew runData
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();

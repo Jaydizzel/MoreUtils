@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreutils:blocks/oct_compressed_cobblestone"
+    "all": "moreutils:block/oct_compressed_cobblestone"
   }
 }

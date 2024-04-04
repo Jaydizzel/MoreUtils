@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreutils:blocks/double_compressed_warped_wart_block"
+    "all": "moreutils:block/double_compressed_warped_wart_block"
   }
 }

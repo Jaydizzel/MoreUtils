@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreutils:blocks/compressed_smooth_basalt"
+    "all": "moreutils:block/compressed_smooth_basalt"
   }
 }
