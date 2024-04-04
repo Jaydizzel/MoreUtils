@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "moreutils:block/dec_compressed_cobblestone"
+    }
+  }
+}

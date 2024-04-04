@@ -20,6 +20,14 @@ public class DataGenerators {   //./gradlew runData
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
+        generator.addProvider(event.includeServer(), JDLootTableProvider.create(packOutput));
         generator.addProvider(event.includeServer(), new JDWorldGenProvider(packOutput, lookupProvider));
+
+        generator.addProvider(event.includeClient(), new JDBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new JDItemModelProvider(packOutput, existingFileHelper));
+
+        JDBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
+                new JDBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(), new JDItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
     }
 }

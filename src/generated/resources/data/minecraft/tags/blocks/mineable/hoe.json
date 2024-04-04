@@ -1,0 +1,13 @@
+{
+  "values": [
+    "moreutils:compressed_nether_wart_block",
+    "moreutils:double_compressed_nether_wart_block",
+    "moreutils:triple_compressed_nether_wart_block",
+    "moreutils:compressed_warped_wart_block",
+    "moreutils:double_compressed_warped_wart_block",
+    "moreutils:triple_compressed_warped_wart_block",
+    "moreutils:compressed_moss_block",
+    "moreutils:double_compressed_moss_block",
+    "moreutils:triple_compressed_moss_block"
+  ]
+}

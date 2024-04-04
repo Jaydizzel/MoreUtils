@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "moreutils:block/double_compressed_deepslate_bricks"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "moreutils:block/quad_compressed_dirt"
+    }
+  }
+}

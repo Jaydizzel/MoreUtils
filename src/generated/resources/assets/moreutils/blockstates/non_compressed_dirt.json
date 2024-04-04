@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "moreutils:block/non_compressed_dirt"
+    }
+  }
+}

@@ -1,7 +1,6 @@
 package com.jaydizzle.moreutils;
 
 import com.jaydizzle.moreutils.block.BlockInit;
-import com.jaydizzle.moreutils.block.JDOres;
 import com.jaydizzle.moreutils.item.ItemInit;
 import com.jaydizzle.moreutils.item.JDCreativeModeTab;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,7 +28,6 @@ public class MoreUtils
 
         ItemInit.register(modEventBus);
         BlockInit.register(modEventBus);
-        JDOres.register(modEventBus);
         JDCreativeModeTab.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

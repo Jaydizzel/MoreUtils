@@ -1,7 +1,7 @@
 package com.jaydizzle.moreutils.worldgen;
 
 import com.jaydizzle.moreutils.MoreUtils;
-import com.jaydizzle.moreutils.block.JDOres;
+import com.jaydizzle.moreutils.block.BlockInit;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -35,34 +35,34 @@ public class JDConfiguredFeatures {
 
 
         List<OreConfiguration.TargetBlockState> overworldOres = List.of(
-                OreConfiguration.target(graniteReplaceables, JDOres.QUARTZ_ORE.get().defaultBlockState()));
+                OreConfiguration.target(graniteReplaceables, BlockInit.QUARTZ_ORE.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> netherOres = List.of(
-                OreConfiguration.target(netherrackReplacables, JDOres.NETHER_COAL_ORE.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplacables, JDOres.NETHER_COPPER_ORE.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplacables, JDOres.NETHER_IRON_ORE.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplacables, JDOres.NETHER_EMERALD_ORE.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplacables, JDOres.NETHER_DIAMOND_ORE.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplacables, JDOres.NETHER_LAPIS_ORE.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplacables, JDOres.NETHER_REDSTONE_ORE.get().defaultBlockState()));
+                OreConfiguration.target(netherrackReplacables, BlockInit.NETHER_COAL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(netherrackReplacables, BlockInit.NETHER_COPPER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(netherrackReplacables, BlockInit.NETHER_IRON_ORE.get().defaultBlockState()),
+                OreConfiguration.target(netherrackReplacables, BlockInit.NETHER_EMERALD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(netherrackReplacables, BlockInit.NETHER_DIAMOND_ORE.get().defaultBlockState()),
+                OreConfiguration.target(netherrackReplacables, BlockInit.NETHER_LAPIS_ORE.get().defaultBlockState()),
+                OreConfiguration.target(netherrackReplacables, BlockInit.NETHER_REDSTONE_ORE.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> endOres = List.of(
-                OreConfiguration.target(endReplaceables, JDOres.END_REDSTONE_ORE.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, JDOres.END_COAL_ORE.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, JDOres.END_COPPER_ORE.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, JDOres.END_EMERALD_ORE.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, JDOres.END_DIAMOND_ORE.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, JDOres.END_GOLD_ORE.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, JDOres.END_IRON_ORE.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, JDOres.END_LAPIS_ORE.get().defaultBlockState()));
+                OreConfiguration.target(endReplaceables, BlockInit.END_REDSTONE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(endReplaceables, BlockInit.END_COAL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(endReplaceables, BlockInit.END_COPPER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(endReplaceables, BlockInit.END_EMERALD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(endReplaceables, BlockInit.END_DIAMOND_ORE.get().defaultBlockState()),
+                OreConfiguration.target(endReplaceables, BlockInit.END_GOLD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(endReplaceables, BlockInit.END_IRON_ORE.get().defaultBlockState()),
+                OreConfiguration.target(endReplaceables, BlockInit.END_LAPIS_ORE.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> oceanOres = List.of(
-                OreConfiguration.target(smoothStoneReplaceables, JDOres.NAUTILUS_ORE.get().defaultBlockState()));
+                OreConfiguration.target(smoothStoneReplaceables, BlockInit.NAUTILUS_ORE.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> gravelOres = List.of(
-                OreConfiguration.target(gravelReplaceables, JDOres.GRAVEL_IRON.get().defaultBlockState()),
-                OreConfiguration.target(gravelReplaceables, JDOres.GRAVEL_GOLD.get().defaultBlockState()),
-                OreConfiguration.target(gravelReplaceables, JDOres.GRAVEL_COPPER.get().defaultBlockState()));
+                OreConfiguration.target(gravelReplaceables, BlockInit.GRAVEL_IRON.get().defaultBlockState()),
+                OreConfiguration.target(gravelReplaceables, BlockInit.GRAVEL_GOLD.get().defaultBlockState()),
+                OreConfiguration.target(gravelReplaceables, BlockInit.GRAVEL_COPPER.get().defaultBlockState()));
 
         register(context, OVERWORLD_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOres, 9));  //vein size
         register(context, NETHER_ORE_KEY, Feature.ORE, new OreConfiguration(netherOres, 9));
