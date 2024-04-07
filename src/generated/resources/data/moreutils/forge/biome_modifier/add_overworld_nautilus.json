@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_ocean",
-  "features": "moreutils:ocean_ore_placed",
+  "features": "moreutils:overworld_nautilus_placed",
   "step": "underground_ores"
 }

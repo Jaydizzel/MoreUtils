@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "moreutils:gravel_ore_placed",
+  "features": "moreutils:gravel_gold_placed",
   "step": "underground_ores"
 }

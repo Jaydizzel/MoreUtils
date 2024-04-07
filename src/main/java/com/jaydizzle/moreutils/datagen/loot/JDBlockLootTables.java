@@ -3,7 +3,15 @@ package com.jaydizzle.moreutils.datagen.loot;
 import com.jaydizzle.moreutils.block.BlockInit;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -15,26 +23,6 @@ public class JDBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(BlockInit.QUARTZ_ORE.get());
-        this.dropSelf(BlockInit.GRAVEL_IRON.get());
-        this.dropSelf(BlockInit.GRAVEL_GOLD.get());
-        this.dropSelf(BlockInit.GRAVEL_COPPER.get());
-        this.dropSelf(BlockInit.NETHER_IRON_ORE.get());
-        this.dropSelf(BlockInit.NETHER_COAL_ORE.get());
-        this.dropSelf(BlockInit.NETHER_DIAMOND_ORE.get());
-        this.dropSelf(BlockInit.NETHER_EMERALD_ORE.get());
-        this.dropSelf(BlockInit.NETHER_REDSTONE_ORE.get());
-        this.dropSelf(BlockInit.NETHER_LAPIS_ORE.get());
-        this.dropSelf(BlockInit.NETHER_COPPER_ORE.get());
-        this.dropSelf(BlockInit.END_COPPER_ORE.get());
-        this.dropSelf(BlockInit.END_IRON_ORE.get());
-        this.dropSelf(BlockInit.END_GOLD_ORE.get());
-        this.dropSelf(BlockInit.END_DIAMOND_ORE.get());
-        this.dropSelf(BlockInit.END_REDSTONE_ORE.get());
-        this.dropSelf(BlockInit.END_EMERALD_ORE.get());
-        this.dropSelf(BlockInit.END_LAPIS_ORE.get());
-        this.dropSelf(BlockInit.END_COAL_ORE.get());
-        this.dropSelf(BlockInit.NAUTILUS_ORE.get());
         this.dropSelf(BlockInit.COMPRESSED_ANDESITE.get());
         this.dropSelf(BlockInit.DOUBLE_COMPRESSED_ANDESITE.get());
         this.dropSelf(BlockInit.TRIPLE_COMPRESSED_ANDESITE.get());
@@ -151,8 +139,109 @@ public class JDBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockInit.COMPRESSED_MOSSY_STONE_BRICKS.get());
         this.dropSelf(BlockInit.DOUBLE_COMPRESSED_MOSSY_STONE_BRICKS.get());
         this.dropSelf(BlockInit.TRIPLE_COMPRESSED_MOSSY_STONE_BRICKS.get());
+
+        this.add(BlockInit.NAUTILUS_ORE.get(), block -> createNautilusLikeOreDrops(BlockInit.NAUTILUS_ORE.get(), Items.NAUTILUS_SHELL));
+        this.add(BlockInit.END_COAL_ORE.get(), block -> createCoalLikeOreDrops(BlockInit.END_COAL_ORE.get(), Items.COAL));
+        this.add(BlockInit.END_REDSTONE_ORE.get(), block -> createRedstoneLikeOreDrops(BlockInit.END_REDSTONE_ORE.get(), Items.REDSTONE));
+        this.add(BlockInit.END_GOLD_ORE.get(), block -> createGoldLikeOreDrops(BlockInit.END_GOLD_ORE.get(), Items.RAW_GOLD));
+        this.add(BlockInit.END_EMERALD_ORE.get(), block -> createEmeraldLikeOreDrops(BlockInit.END_EMERALD_ORE.get(), Items.EMERALD));
+        this.add(BlockInit.END_DIAMOND_ORE.get(), block -> createDiamondLikeOreDrops(BlockInit.END_DIAMOND_ORE.get(), Items.DIAMOND));
+        this.add(BlockInit.END_LAPIS_ORE.get(), block -> createLapisLikeOreDrops(BlockInit.END_LAPIS_ORE.get(), Items.LAPIS_LAZULI));
+        this.add(BlockInit.END_IRON_ORE.get(), block -> createIronLikeOreDrops(BlockInit.END_IRON_ORE.get(), Items.RAW_IRON));
+        this.add(BlockInit.END_COPPER_ORE.get(), block -> createCopperLikeOreDrops(BlockInit.END_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(BlockInit.GRAVEL_IRON.get(), block -> createIronLikeOreDrops(BlockInit.GRAVEL_IRON.get(), Items.RAW_IRON));
+        this.add(BlockInit.GRAVEL_COPPER.get(), block -> createCopperLikeOreDrops(BlockInit.GRAVEL_COPPER.get(), Items.RAW_COPPER));
+        this.add(BlockInit.GRAVEL_GOLD.get(), block -> createGoldLikeOreDrops(BlockInit.GRAVEL_GOLD.get(), Items.RAW_GOLD));
+        this.add(BlockInit.NETHER_REDSTONE_ORE.get(), block -> createRedstoneLikeOreDrops(BlockInit.NETHER_REDSTONE_ORE.get(), Items.REDSTONE));
+        this.add(BlockInit.NETHER_EMERALD_ORE.get(), block -> createEmeraldLikeOreDrops(BlockInit.NETHER_EMERALD_ORE.get(), Items.EMERALD));
+        this.add(BlockInit.NETHER_DIAMOND_ORE.get(), block -> createDiamondLikeOreDrops(BlockInit.NETHER_DIAMOND_ORE.get(), Items.DIAMOND));
+        this.add(BlockInit.NETHER_COAL_ORE.get(), block -> createCoalLikeOreDrops(BlockInit.NETHER_COAL_ORE.get(), Items.COAL));
+        this.add(BlockInit.NETHER_IRON_ORE.get(), block -> createIronLikeOreDrops(BlockInit.NETHER_IRON_ORE.get(), Items.RAW_IRON));
+        this.add(BlockInit.NETHER_COPPER_ORE.get(), block -> createCopperLikeOreDrops(BlockInit.NETHER_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(BlockInit.NETHER_LAPIS_ORE.get(), block -> createLapisLikeOreDrops(BlockInit.NETHER_LAPIS_ORE.get(), Items.LAPIS_LAZULI));
+        this.add(BlockInit.QUARTZ_ORE.get(), block -> createQuartzLikeOreDrops(BlockInit.QUARTZ_ORE.get(), Items.QUARTZ));
+
     }
 
+    protected LootTable.Builder createQuartzLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createGoldLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createIronLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createLapisLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(4.0F, 9.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createRedstoneLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(4.0F, 5.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createDiamondLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createEmeraldLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createNautilusLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createCoalLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
     @Override
     protected Iterable<Block> getKnownBlocks() {
         return BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
