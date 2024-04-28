@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:honey_bottle"
+  },
+  "result": "moreutils:honeycomb_piece",
+  "experience": 0.0,
+  "cookingtime": 150
+}

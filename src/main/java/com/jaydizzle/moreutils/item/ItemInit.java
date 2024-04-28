@@ -18,6 +18,7 @@ public class ItemInit {
     public static final RegistryObject<Item> BAMBOO_BUNDLE = ITEMS.register("bamboo_bundle", () -> new BambooBundleItem(new Item.Properties()));
     public static final RegistryObject<Item> STICK_BUNDLE = ITEMS.register("stick_bundle", () -> new StickBundleItem(new Item.Properties()));
     public static final RegistryObject<Item> BLAZE_ROD_BUNDLE = ITEMS.register("blaze_rod_bundle", () -> new BlazeRodBundleItem(new Item.Properties()));
+    public static final RegistryObject<Item> HONEYCOMB_PIECE = ITEMS.register("honeycomb_piece", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

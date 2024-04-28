@@ -23,6 +23,7 @@ public class JDCreativeModeTab {
                         pOutput.accept(ItemInit.BLAZE_ROD_BUNDLE.get());
                         pOutput.accept(ItemInit.STICK_BUNDLE.get());
                         pOutput.accept(ItemInit.BAMBOO_BUNDLE.get());
+                        pOutput.accept(ItemInit.HONEYCOMB_PIECE.get());
                         pOutput.accept(BlockInit.QUARTZ_ORE.get());
                         pOutput.accept(BlockInit.GRAVEL_IRON.get());
                         pOutput.accept(BlockInit.GRAVEL_GOLD.get());

@@ -23,6 +23,7 @@ public class JDItemModelProvider extends ItemModelProvider {
         simpleItem(ItemInit.BLAZE_ROD_BUNDLE);
         simpleItem(ItemInit.BONE_BUNDLE);
         simpleItem(ItemInit.STICK_BUNDLE);
+        simpleItem(ItemInit.HONEYCOMB_PIECE);
 
 
     }
