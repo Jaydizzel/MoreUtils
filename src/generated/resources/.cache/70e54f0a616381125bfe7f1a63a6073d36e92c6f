@@ -1,8 +1,8 @@
-// 1.20.1	2024-04-04T14:45:54.6168714	Tags for minecraft:block mod id moreutils
-f0939d217c1c582b462afee6970b0bf980452853 data/forge/tags/blocks/needs_wood_tool.json
-467162f4f7d87e36826e81aa87e073fca1dc2d95 data/minecraft/tags/blocks/mineable/hoe.json
-b0a094706df910c14ae8d19d5240451bf12a3de5 data/minecraft/tags/blocks/mineable/pickaxe.json
-11327fafb8443da98aa60a5948a08d90a278cf38 data/minecraft/tags/blocks/mineable/shovel.json
-3c0fedf6592d8e07cb7a2c6d86e77ec380a0463b data/minecraft/tags/blocks/needs_diamond_tool.json
-ff093f3d075fe1a500359f663b3a5f048e022538 data/minecraft/tags/blocks/needs_iron_tool.json
-7e96c09cf4a9e5593c20150d7665a911feb89857 data/minecraft/tags/blocks/needs_stone_tool.json
+// 1.21	2025-01-15T00:46:39.2606188	Tags for minecraft:block mod id moreutils
+467162f4f7d87e36826e81aa87e073fca1dc2d95 data/minecraft/tags/block/mineable/hoe.json
+b0a094706df910c14ae8d19d5240451bf12a3de5 data/minecraft/tags/block/mineable/pickaxe.json
+11327fafb8443da98aa60a5948a08d90a278cf38 data/minecraft/tags/block/mineable/shovel.json
+3c0fedf6592d8e07cb7a2c6d86e77ec380a0463b data/minecraft/tags/block/needs_diamond_tool.json
+ff093f3d075fe1a500359f663b3a5f048e022538 data/minecraft/tags/block/needs_iron_tool.json
+7e96c09cf4a9e5593c20150d7665a911feb89857 data/minecraft/tags/block/needs_stone_tool.json
+f0939d217c1c582b462afee6970b0bf980452853 data/neoforge/tags/block/needs_wood_tool.json

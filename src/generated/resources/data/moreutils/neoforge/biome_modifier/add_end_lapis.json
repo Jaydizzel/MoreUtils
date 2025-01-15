@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "moreutils:end_lapis_placed",
+  "step": "underground_ores"
+}
